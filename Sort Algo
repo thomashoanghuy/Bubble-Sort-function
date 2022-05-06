@@ -1,0 +1,9 @@
+def bubbleSort(arr):
+    n = len(arr)
+    for i in range(n-1):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j + 1] :
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+ #inner loop will compare between 2 values next to each other and switch the larger number to second place. End of loop, will result in largest number of the array - 
+ #- pushed to the last index. Outer loop is to cut off the last index (since it's already sorted to be the largest value) and prepare the shorter length of array-
+ # for the inner loop to run again. Each time the inner loop runs, will push the largest value of that array to last index and len(arr) reduced to 1
